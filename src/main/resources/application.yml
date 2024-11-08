@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+#          - https://github.com/SOA-labs/configs
+            file:///${user.home}/ITMO/soa/lab2/configs/
+          search-paths: {application}
+          clone-on-start: false
+#          default-label: main
+#eureka:
+#  client:
+#    region: default
+#    registry-fetch-interval-seconds: 15
+#    serviceUrl:
+#      defaultZone: http://localhost:9999/eureka/
+
