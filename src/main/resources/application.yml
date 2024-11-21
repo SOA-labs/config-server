@@ -12,6 +12,7 @@ spring:
 #          uri: https://github.com/SOA-labs/configs
           uri: file:///${user.home}/ITMO/soa/lab2/configs/
           search-paths: {application}
+          default-label: changes-second-service-yml
 
 #eureka:
 #  client:
